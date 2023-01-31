@@ -1,0 +1,89 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "validate_bank_data",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "CLIENTNUM"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "CLIENTNUM"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "Customer_Age"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "Customer_Age",
+        "min_value": 18,
+        "max_value": 120
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "Attrition_Flag",
+        "value_set": [
+          "Existing Customer",
+          "Attrited Customer"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "Marital_Status",
+        "value_set": [
+          "Married",
+          "Single",
+          "Unknown",
+          "Divorced"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "Card_Category",
+        "value_set": [
+          "Blue",
+          "Silver",
+          "Gold",
+          "Platinum"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "BankChurners.csv",
+          "data_connector_name": "default_inferred_data_connector_name",
+          "datasource_name": "churn_datasource",
+          "limit": 1000
+        },
+        "citation_date": "2023-01-24T08:34:08.100640Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.15.43"
+  }
+}
