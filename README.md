@@ -1,4 +1,4 @@
-OpenDataDiscover + Great Expectations = <3
+OpenDataDiscovery + Great Expectations = <3
 
 ![image](assets/screenshot.png)
 ___
