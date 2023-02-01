@@ -52,11 +52,11 @@ odd collect data
 For demo purposes we prepared expectations (`/great_expectations/expectations/validate_bank_data.json`) and 2 checkpoints (`/great_expectations/checkpoints/*`) to run data quality tests against BankChurners files  
 succeeded_checkpoint - Validates `data/BankChurners.csv` file.
 ```bash
-great_expectations run succeeded_checkpoint
+great_expectations checkpoint run succeeded_checkpoint
 ```
 failed_checkpoint - Validates `data/BankChurners.csv` and `data/BankChurners_Bad.csv` files.
 ```bash
-great_expectations run failed_checkpoint
+great_expectations checkpoint run failed_checkpoint
 ```
 
 ### Got to OpenDataDiscovery UI.
