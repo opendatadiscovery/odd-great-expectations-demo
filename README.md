@@ -1,4 +1,6 @@
 OpenDataDiscover + Great Expectations = <3
+
+![image](assets/screenshot.png)
 ___
 
 This demo project shows ways OpenDataDiscovery works wits Data QA.
